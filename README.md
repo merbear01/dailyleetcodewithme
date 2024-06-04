@@ -1,6 +1,3 @@
-Sure! Here's a draft for your README:
-
----
 
 # DailyLeetCodeWithMe
 
