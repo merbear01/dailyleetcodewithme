@@ -1,4 +1,3 @@
-Certainly! Let’s break down the steps in the non_repeating function so you can see what’s happening:
 
 1. Initialize variables:
 2. left: A pointer representing the left boundary of the current substring.
