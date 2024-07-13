@@ -4,12 +4,12 @@ class Solution(object):
         :type grid: List[List[int]]
         :rtype: int
         """
-        lst = []
+        new_lst = []
         for l in grid:
-            lst.extend(l)
+            new_lst.extend(l)
         # return lst
-        pot = 0
-        for items in lst:
+        negative_pot = 0
+        for items in new_lst:
             if items < 0:
-                pot += 1
-        return pot
+                negative_pot += 1
+        return negative_pot
