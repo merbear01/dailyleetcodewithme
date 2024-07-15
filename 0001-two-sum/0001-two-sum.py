@@ -7,5 +7,19 @@ class Solution(object):
                 return [dic[second], key]
             dic[value] = key
         return 
-
-
+        
+#         arr.sort()
+#         left = 0
+#         counter  = 0
+#         right = len(arr) - 1
+        
+#         while left < right:
+#             cur_sum = arr[left] + arr[right]
+#             if cur_sum == target:
+#                 return [left, right]
+#             elif cur_sum < target:
+#                 left += 1
+#             else:
+#                 right -= 1
+#         return None
+            
