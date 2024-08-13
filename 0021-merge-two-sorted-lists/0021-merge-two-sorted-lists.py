@@ -11,16 +11,19 @@ class Solution(object):
         :rtype: Optional[ListNode]
         """
         dummy = ListNode()
-        current = dummy
-        while list1 and list2:
+        curr = dummy
+        while list1 is not None and list2 is not None:
             if list1.val < list2.val:
-                current.next = list1
+                curr.next = list1
                 list1 = list1.next
             else:
-                current.next = list2
+                curr.next = list2
                 list2 = list2.next
-            current = current.next
-            
-        current.next = list1 or list2
+       
+            curr = curr.next
+        # Attach the remaining part of the list
+        if list1 is not None:
+            curr.next = list1
+        else:
+            curr.next = list2
         return dummy.next
-            
